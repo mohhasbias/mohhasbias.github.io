@@ -1,0 +1,73 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, PROCEEDINGS, JOURNALS } from '../consts';
+import * as AboutMe from './about.md';
+
+const proceedings = PROCEEDINGS.filter(
+  (proceeding) => proceeding.year >= new Date().getFullYear() - 5
+)
+  .sort((a, b) => b.year - a.year)
+  .slice(0, 5);
+
+const journals = JOURNALS.filter(
+  (journal) => journal.year >= new Date().getFullYear() - 5
+)
+  .sort((a, b) => b.year - a.year)
+  .slice(0, 5);
+
+const { compiledContent } = AboutMe;
+const AboutMeContent = compiledContent();
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <h1>Moh. Hasbi Assidiqi</h1>
+      <p>
+        Assistant Professor / Asisten Ahli<br />
+        Diploma of Multimedia Broadcasting Technology<br />
+        Department of Creative Multimedia Technology<br />
+        <a href="https://www.pens.ac.id"
+          >Electronic Engineering Polytechnic Institute of Surabaya</a
+        >
+      </p>
+      <h1>About Me</h1>
+      <Fragment set:html="AboutMeContent"></Fragment>
+      <h1>Publications</h1>
+      <h2>Proceedings papers</h2>
+      <ol>
+        {
+          proceedings.map((proceeding) => (
+            <li>
+              {proceeding.citation}
+              <a href={'https://www.doi.org/' + proceeding.doi}>[View]</a>
+            </li>
+          ))
+        }
+      </ol>
+      <h2>Journal papers</h2>
+      <ol>
+        {
+          journals.map((journal) => (
+            <li>
+              {journal.citation}
+              <a href={'https://www.doi.org/' + journal.doi}>[View]</a>
+            </li>
+          ))
+        }
+      </ol>
+      <!-- <h2>Dissertation</h2> -->
+      <!-- <ol>
+		<li></li>
+	  </ol> -->
+    </main>
+    <Footer />
+  </body>
+</html>
