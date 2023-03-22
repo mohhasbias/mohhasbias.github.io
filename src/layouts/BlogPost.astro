@@ -12,7 +12,7 @@ const {
   description,
   updatedDate,
   heroImage,
-  published,
+  draft,
   pubDate: astroPubDate,
 } = Astro.props.frontmatter || Astro.props;
 const pubDate = z
@@ -44,8 +44,8 @@ const pubDate = z
       <article>
         {heroImage && <img width={720} height={360} src={heroImage} alt="" />}
         <h1 class="title">{title}</h1>
-        {published && pubDate && <time>{pubDate}</time>}
-        {!published && <em>Unpublished</em>}
+        {!draft && pubDate && <time>{pubDate}</time>}
+        {draft && <em>Unpublished</em>}
         {
           updatedDate && (
             <div>
