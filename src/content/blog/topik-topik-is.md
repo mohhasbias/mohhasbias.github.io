@@ -1,7 +1,7 @@
 ---
 title: "Topik-topik di Sistem Informasi"
 description: "Beberapa topik dalam sistem informasi"
-pubDate: "Mar 14 2023"
+pubDate: "Mar 20 2023"
 # heroImage: "/placeholder-hero.jpg"
 # draft: true
 ---
@@ -15,6 +15,8 @@ Beberapa topik yang termasuk di dalam Sistem Informasi, antara lain:
 5. Blockchain Data Structure
 6. Artificial Intelligence
 7. Cybersecurity
+
+Pada kesempatan ini, dibahas tentang Business Intelligence (BI). Apa yang dimaksud dengan BI, bagaimana sejarahnya, apa saja contohnya, dan bagaimana kemungkinan kedepannya.
 
 ## Business Intelligence
 
@@ -56,6 +58,9 @@ Penerapan BI tersebut dapat dilakukan seiring berkembangnya teknologi hardware, 
   
   Adanya teknologi wireless dan kecepatan internet yang tinggi memungkinkan manajer untuk mengakses informasi di mana saja dan kapan saja.
 
+Beberapa contoh penerapan teknologi BI terdapat pada kumpulan [BSI Videos][BSI Videos] yang dikemas dengan format seperti serial TV CSI. Di dalam video tersebut terdapat permasalahan yang dihadapi, data yang diketahui, pendekatan yang digunakan, dan hasil yang diperoleh.
+
 [BI book]: https://www.pearson.com/en-us/subject-catalog/p/business-intelligence-analytics-and-data-science-a-managerial-perspective/P200000001822?view=educator&tab=title-overview
 [dynamic pricing]: https://go.gale.com/ps/retrieve.do?tabID=T002&resultListType=RESULT_LIST&searchResultsType=SingleTab&hitCount=6&searchType=AdvancedSearchForm&currentPosition=5&docId=GALE%7CA453914442&docType=Report&sort=Relevance&contentSegment=ZONE-Exclude-FT&prodId=AONE&pageNum=1&contentSet=GALE%7CA453914442&searchId=R1&userGroupName=anon%7Eb947833c&inPS=true
 [precision football]: https://dl.acm.org/doi/abs/10.1145/2933230
+[BSI Videos]: https://www.teradata.com/University/Academics/Content-Preview

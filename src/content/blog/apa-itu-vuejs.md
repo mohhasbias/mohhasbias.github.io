@@ -172,7 +172,6 @@ perbedaannya terdapat pada kode yang dibuat. perhatikan saat kedua kode tersebut
 Secara jumlah baris menjadi lebih banyak. Tapi secara struktur pemograman, bagian-bagian dari kode tersebut terlihat lebih jelas. Kodenya menjadi lebih mudah dipahami.
 
 Dengan struktur yang baru ini, terdapat cara baca dari kode tersebut seperti gambar berikut.  
-[![Cara baca VueJS](/2019/01/06/Apa-itu-VueJS-1/cara-baca-vuejs.png)](https://mohhasbias.github.io/2019/01/06/Apa-itu-VueJS-1/cara-baca-vuejs.png "Cara baca VueJS")Cara baca VueJS  
 ![Cara baca VueJS](/assets/cara-baca-vuejs.png)
 *Cara baca VueJS*
 
@@ -184,4 +183,4 @@ Cara bacanya sebagai berikut:
 3. Terdapat perintah `app.updateTime()`. `app` di sini merujuk pada elemen yang dikelola oleh Vue. Dan melalui `app`, fungsi apapun yang tertulis di `methods` bisa dipanggil.
 4. Fungsi yang didaftarkan di `methods` bisa digunakan untuk mengutak-atik data dengan menggunakan perintah `this`. Dalam hal ini `this.currentTime` merujuk pada variable `currentTime` pada bagian `data`.
 
-4 hal tersebut mewakili konsep [enkapsulasi](https://www.thoughtco.com/data-encapsulation-2034263), yaitu mengumpulkan beberapa hal yang berbeda tapi berkaitan dalam satu tempat. Ada 3 hal utama yang dikumpulkan oleh VueJS, yaitu `el`, `data`, dan `methods`. Hal ini mewakili 3 bagian utama dari halaman web ini. `el` mewakili DOM element dalam hal ini ada element dengan id `app` yang diwakili oleh css selector `#app`. Data mewakili data yang bisa ditampilkan di html. Diwakili oleh `{{ currentTime }}` pada html. Bentuk `{{ }}` merupakan perintah untuk menampilkan data. Adanya bentuk ini merupakan ciri khas dari [HTML template](https://colorlib.com/wp/top-templating-engines-for-javascript/) Kemudian ada `methods` dalam hal ini adalah fungsi `updateTime`.
+4 hal tersebut mewakili konsep [enkapsulasi](https://www.thoughtco.com/data-encapsulation-2034263), yaitu mengumpulkan beberapa hal yang berbeda tapi berkaitan dalam satu tempat. Ada 3 hal utama yang dikumpulkan oleh VueJS, yaitu `el`, `data`, dan `methods`. Hal ini mewakili 3 bagian utama dari halaman web ini. `el` mewakili DOM element dalam hal ini ada element dengan id `app` yang diwakili oleh css selector `#app`. Data mewakili data yang bisa ditampilkan di html. Diwakili oleh `{{ currentTime }}` pada html. Bentuk `{{ }}` merupakan perintah untuk menampilkan data. Adanya bentuk ini merupakan ciri khas dari [HTML template](https://colorlib.com/wp/top-templating-engines-for-javascript/). Kemudian ada `methods` dalam hal ini adalah fungsi `updateTime`.
