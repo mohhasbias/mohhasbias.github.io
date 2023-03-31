@@ -86,6 +86,12 @@ Matlabplotlib adalah library untuk visualisasi data yang terinspirasi dari Matla
 - `ax.set_xlim()`: untuk menambahkan batas sumbu x pada plot pada axis.
 - `ax.set_ylim()`: untuk menambahkan batas sumbu y pada plot pada axis.
 
+matplotlib bisa langsung diakses lewat pandas. contoh:
+```python
+# membuat plot dari kolom TotalPay
+salaries['TotalPay'].plot()
+```
+
 ## Seaborn
 
 Seaborn dibuat di atas matplotlib. Seaborn menyediakan beberapa chart/diagram yang siap digunakan. antara lain:
@@ -95,6 +101,26 @@ Seaborn dibuat di atas matplotlib. Seaborn menyediakan beberapa chart/diagram ya
 - Grid Plot: untuk melihat hubungan antar kolom dengan kategori.
 - Regression Plot: untuk melihat hubungan antar kolom dengan garis regresi.
 
+seaborn bisa digunakan untuk mengubah style dari matplotlib. contoh:
+```python
+# mengubah style matplotlib menjadi darkgrid
+sns.set_style('darkgrid')
+```
+maka semua plot yang dibuat akan menggunakan style darkgrid.
+
+## Plotly and Cufflinks
+
+Plotly dan Cufflinks adalah library untuk visualisasi data yang interaktif. Plotly dan Cufflinks bisa digunakan untuk membuat plot yang bisa di zoom, di scroll, dan bisa di save ke dalam file html.
+Plotly juga bisa digunakan melalui pandas. contoh:
+```python
+# membuat plot dari kolom TotalPay
+salaries['TotalPay'].iplot()
+```
+Cukup dengan mengubah dari `plot()` menjadi `iplot()`, maka plot yang dibuat akan interaktif.
+
+## Referensi
+[Python for Data Science and Machine Learning Bootcamp
+](https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/learn/lecture/5733386#overview)
 
 [function]: https://www.freecodecamp.org/learn/scientific-computing-with-python/python-for-everybody/python-functions
 [loops]: https://www.freecodecamp.org/learn/scientific-computing-with-python/python-for-everybody/loops-and-iterations
