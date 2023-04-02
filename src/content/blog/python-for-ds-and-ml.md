@@ -20,6 +20,8 @@ Selain itu terdapat beberapa libraries pendukung antara lain:
 - [pandas][pandas]: untuk manipulasi tables. semacam padanan dari spreadsheet.
 - [matplotlib][matplotlib]: untuk visualisasi data.
 - [seaborn][seaborn]: untuk visualisasi data.
+- [plotly][plotly] dan [cufflinks][cufflinks]: untuk visualisasi data interaktif.
+- [scikit-learn][scikit-learn]: untuk machine learning.
 
 ## Numpy
 
@@ -118,6 +120,18 @@ salaries['TotalPay'].iplot()
 ```
 Cukup dengan mengubah dari `plot()` menjadi `iplot()`, maka plot yang dibuat akan interaktif.
 
+## Scikit-Learn
+
+Scikit-Learn adalah library untuk machine learning. Scikit-Learn menyediakan beberapa algoritma machine learning, antara lain:
+- Linear Regression
+- Logistic Regression
+- K-Nearest Neighbors
+- K-Means
+- Decision Trees
+- Random Forest
+- Support Vector Machines
+- Natural Language Processing
+
 ## Referensi
 [Python for Data Science and Machine Learning Bootcamp
 ](https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/learn/lecture/5733386#overview)
@@ -132,3 +146,6 @@ Cukup dengan mengubah dari `plot()` menjadi `iplot()`, maka plot yang dibuat aka
 [pandas]: https://pandas.pydata.org/
 [matplotlib]: https://matplotlib.org/
 [seaborn]: https://seaborn.pydata.org/
+[plotly]: https://plotly.com/python/
+[cufflinks]: https://plotly.com/python/cufflinks/
+[scikit-learn]: https://scikit-learn.org/stable/
