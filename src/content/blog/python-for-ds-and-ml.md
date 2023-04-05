@@ -132,6 +132,42 @@ Scikit-Learn adalah library untuk machine learning. Scikit-Learn menyediakan beb
 - Support Vector Machines
 - Natural Language Processing
 
+## Contoh penggunaan
+
+1. Prediksi menggunakan Multinomial Naive Bayes
+
+    ```python
+    # import library
+    from sklearn.naive_bayes import MultinomialNB
+    from sklearn.metrics import classification_report, confusion_matrix
+
+    # tentukan X dan y
+    X = df['text']
+    y = df['label']
+   
+    # split data
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+   
+    # inisialisasi model
+    model = MultinomialNB()
+
+    # training model
+    model.fit(X_train, y_train)
+
+    # prediksi
+    y_pred = model.predict(X_test)
+
+    # evaluasi model
+    print(classification_report(y_test, y_pred))
+    print(confusion_matrix(y_test, y_pred))
+    ```
+
+## Ringkasan
+
+Keterkaitan antara python dan library-library tersebut bisa dilihat pada gambar berikut:
+
+<div><a href='//sketchviz.com/@mohhasbias/84f18cbe1e1701dfeef50e45c0bcded8'><img alt='interdepensi library' src='https://sketchviz.com/@mohhasbias/84f18cbe1e1701dfeef50e45c0bcded8/84af41a5f45fe96626da0255b944880d58ab14af.sketchy.png' style='max-width: 100%;'></a><br/><span style='font-size: 80%;color:#555;'>Hosted on <a href='//sketchviz.com/' style='color:#555;'>Sketchviz</a></span></div>
+
 ## Referensi
 [Python for Data Science and Machine Learning Bootcamp
 ](https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/learn/lecture/5733386#overview)
