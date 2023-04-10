@@ -65,7 +65,7 @@ Beberapa fitur python yang digunakan antara lain:
 
 ## Libraries
 
-ada beberapa libraries python yang berkaitan dengan Natural Language Processing. Beberapa diantaranya adalah:
+Ada beberapa libraries python yang berkaitan dengan Natural Language Processing. Beberapa diantaranya adalah:
 - NLTK
 - Spacy
 - SciKit Learn
@@ -86,6 +86,7 @@ Spacy adalah library python yang digunakan untuk melakukan Natural Language Proc
 - Stemming
 - Lemmatization
 - Stopwords
+
 Spacy sering digunakan untuk Lemmatization karena lebih akurat dibandingkan dengan NLTK.
 
 ### SciKit Learn

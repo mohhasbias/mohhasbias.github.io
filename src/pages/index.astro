@@ -23,6 +23,7 @@ const AboutMeContent = compiledContent();
 
 <!DOCTYPE html>
 <html lang="en">
+  <!--suppress HtmlRequiredTitleElement -->
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
@@ -31,7 +32,7 @@ const AboutMeContent = compiledContent();
     <main>
       <h1>Moh. Hasbi Assidiqi</h1>
       <p>
-        Assistant Professor / Asisten Ahli<br />
+        Assistant Professor / Lektor<br />
         Diploma of Multimedia Broadcasting Technology<br />
         Department of Creative Multimedia Technology<br />
         <a href="https://www.pens.ac.id"
@@ -39,7 +40,8 @@ const AboutMeContent = compiledContent();
         >
       </p>
       <h1>About Me</h1>
-      <Fragment set:html="AboutMeContent"></Fragment>
+      <!--suppress HtmlUnknownTag -->
+      <Fragment set:html={AboutMeContent}></Fragment>
       <h1>Publications</h1>
       <h2>Proceedings papers</h2>
       <ol>
