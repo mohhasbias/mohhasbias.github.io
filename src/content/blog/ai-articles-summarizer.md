@@ -3,7 +3,7 @@ title: "Membuat Ringkasan Artikel menggunakan AI - Elicit.org"
 description: "Membuat Ringkasan Artikel menggunakan AI"
 pubDate: "Apr 05 2023"
 # heroImage: "/placeholder-hero.jpg"
-# draft: true
+draft: true
 ---
 
 ## Example

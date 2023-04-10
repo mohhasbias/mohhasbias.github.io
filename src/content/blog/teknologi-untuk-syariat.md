@@ -3,7 +3,7 @@ title: "Teknologi untuk menjalankan syariat: HHR"
 description: "Teknologi-teknologi yang bermanfaat dalam menjalankan syariat"
 pubDate: "Apr 08 2023"
 # heroImage: "/placeholder-hero.jpg"
-# draft: true
+draft: true
 ---
 
 ## Referensi
