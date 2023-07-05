@@ -8,7 +8,7 @@ draft: true
 # TODO: bikin uraian tentang konsep dasar web app
 ---
 
-# For Dummies
+## For Dummies
 Buzz Words:
 1. Front End
 2. Back End
@@ -16,5 +16,19 @@ Buzz Words:
 4. File System
 5. Database
 
-# Referensi
+## Front End
+
+
+## Back End
+
+
+## Web Server
+
+
+## File System
+
+
+## Database
+
+## Referensi
 https://reinvently.com/blog/fundamentals-web-application-architecture/

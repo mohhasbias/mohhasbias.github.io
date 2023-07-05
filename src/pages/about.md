@@ -12,6 +12,6 @@ In pursue of my passion, I've participating in many programming challenges inclu
 
 I also love to program everything that I can which is now becoming a field called Robotic Process Automation. I'm also a tech enthusiast and love to learn about new technologies, including Kafka, Redis, and Grafana. I love software development from planning to deployment, and I'm also a big fan of DevOps. I'm also a big fan of transparent progress as encouraged by Agile and Scrum.
 
-Currently, I'm studying at [King Abdulaziz University](https://www.kau.edu.sa/Home.aspx?lng=en) in Saudi Arabia. I'm pursuing Doctoral Degree in Computer Information System in Faculty of Computer and Information Technology. 
+Currently, I'm studying at [King Abdulaziz University](https://www.kau.edu.sa/Home.aspx?lng=en) in Saudi Arabia. I'm pursuing Doctoral Degree in Computer Information System in Faculty of Computer and Information Technology.
 
 Basically, I'm a tech enthusiast, programming lover, and competitive programmer passionate about building scalable solutions and teaching others. Let's learn and code together!
