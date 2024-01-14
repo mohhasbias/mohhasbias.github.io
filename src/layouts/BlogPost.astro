@@ -1,11 +1,20 @@
 ---
-import type { CollectionEntry } from 'astro:content';
 import { z } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-type Props = CollectionEntry<'blog'>['data'];
+interface FrontMatter {
+  title: string;
+  description: string;
+  pubDate: Date;
+  draft: boolean;
+  updatedDate?: Date | undefined;
+  heroImage?: string | undefined;
+}
+interface Props extends FrontMatter{
+  frontmatter?: FrontMatter | undefined;
+}
 
 const {
   title,
@@ -15,6 +24,7 @@ const {
   draft,
   pubDate: astroPubDate,
 } = Astro.props.frontmatter || Astro.props;
+
 const pubDate = z
   .string()
   .or(z.date())
