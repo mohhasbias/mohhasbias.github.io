@@ -46,7 +46,7 @@ const posts = (await getCollection('blog'))
 									{post.data.pubDate.toLocaleDateString('en-us', {
 										year: 'numeric',
 										month: 'short',
-										day: 'numeric',
+										day: '2-digit',
 									})}
 								</time>
 								<a href={`/blog/${post.slug}/`}>{post.data.title}</a>
